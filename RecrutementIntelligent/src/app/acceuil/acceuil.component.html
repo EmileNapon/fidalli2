@@ -1,0 +1,97 @@
+<body>
+  <nav class="navbar navbar-relative navbar-expand-lg navbar-dark">
+    <div class="container">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+       data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Nous rejoindre</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Contact</a>
+          </li>
+          <form class="d-flex">
+            <button class="btn btn-secondary nav-item" (click)="toggleSearch()" type="button"><i class="bi bi-search"></i></button>
+          </form>
+        </ul>
+      </div>
+    </div>
+    <div class="search-container " [ngClass]="{'show': showSearch}">
+      <button class="close-button" (click)="toggleSearch()"><i class="bi bi-x-lg"></i></button>
+      <input class="form-control " type="search" placeholder="Rechercher..." aria-label="Search">
+    </div>
+  </nav>
+  
+  
+  <div class="scrollable-background">
+  
+  
+    <nav class="navbar navbar-scroll  changecolor2 navbar-expand-lg navbar-light" style='height:90px; background-color: white;' [ngClass]="{'fixed': isFixed2}" [ngClass]="{'fixed': isFixed}">
+      <div class="container-fluid">
+        
+        <a class="navbar-brand " href="#" style='color:Green'> <h3> Emploi Burkina  </h3></a>
+  
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Acceuil</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Offres d'Emploi</a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Vous êtes
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" routerLink="/formation/pages-etudiant">Etudiant</a></li>
+                <li><a class="dropdown-item" routerLink="/formation/pages-candidat">Candidat</a></li>
+                <li><a class="dropdown-item" href="#">Employeur</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Formation
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" routerLink='/formation/contenu-libre'>Contenu libre</a></li>
+                <li><a class="dropdown-item" href="#">Formation en presentielle</a></li>
+                <li><a class="dropdown-item" href="#">Certification</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" routerLink="premium/premium-etudiant">Orientation</a>
+            </li>
+
+             
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Statisques de l'emploi</a>
+        </li>
+      
+          </ul>
+        </div>
+        <ul class='navbar-nav' >
+          <li class="nav-item m-5 ">
+            <button class="btn btn-outline-secondary  " aria-current="page" href="#">Se connecter</button>
+          </li>
+        </ul>
+      
+    </div>
+    </nav>
+  
+  </div> 
+   
+    
+   
+  </body>
+  
