@@ -1,97 +1,222 @@
 <body>
-  <nav class="navbar navbar-relative navbar-expand-lg navbar-dark">
-    <div class="container">
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-       data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Nous rejoindre</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Contact</a>
-          </li>
-          <form class="d-flex">
-            <button class="btn btn-secondary nav-item" (click)="toggleSearch()" type="button"><i class="bi bi-search"></i></button>
-          </form>
-        </ul>
-      </div>
-    </div>
-    <div class="search-container " [ngClass]="{'show': showSearch}">
-      <button class="close-button" (click)="toggleSearch()"><i class="bi bi-x-lg"></i></button>
-      <input class="form-control " type="search" placeholder="Rechercher..." aria-label="Search">
-    </div>
-  </nav>
+    <!-- En-tête -->
   
-  
-  <div class="scrollable-background">
-  
-  
-    <nav class="navbar navbar-scroll  changecolor2 navbar-expand-lg navbar-light" style='height:90px; background-color: white;' [ngClass]="{'fixed': isFixed2}" [ngClass]="{'fixed': isFixed}">
-      <div class="container-fluid">
-        
-        <a class="navbar-brand " href="#" style='color:Green'> <h3> Emploi Burkina  </h3></a>
-  
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Acceuil</a>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Offres d'Emploi</a>
-            </li>
-
-            <li class="nav-item dropdown">
-              <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Vous êtes
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" routerLink="/formation/pages-etudiant">Etudiant</a></li>
-                <li><a class="dropdown-item" routerLink="/formation/pages-candidat">Candidat</a></li>
-                <li><a class="dropdown-item" href="#">Employeur</a></li>
-              </ul>
-            </li>
-
-            <li class="nav-item dropdown">
-              <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Formation
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" routerLink='/formation/contenu-libre'>Contenu libre</a></li>
-                <li><a class="dropdown-item" href="#">Formation en presentielle</a></li>
-                <li><a class="dropdown-item" href="#">Certification</a></li>
-              </ul>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" routerLink="premium/premium-etudiant">Orientation</a>
-            </li>
-
-             
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Statisques de l'emploi</a>
-        </li>
+        <!-- Première entête -->
+        <div class=" text-white ">
+            
       
-          </ul>
+        <nav class="navbar navbar-relative navbar-expand-lg navbar-dark">
+            <div class="container police1">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+               data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">À propos de nous</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Nous contacter</a>
+                  </li>
+                  <li class="nav-item ">
+                    <select id="language" class="form-select">
+                        <option value="fr">FR</option>
+                        <option value="en">EN</option>
+                    </select>
+                </li>
+
+                </ul>
+              </div>
+            </div>
+          </nav>
+
+
         </div>
-        <ul class='navbar-nav' >
-          <li class="nav-item m-5 ">
-            <button class="btn btn-outline-secondary  " aria-current="page" href="#">Se connecter</button>
-          </li>
-        </ul>
-      
+
+       
+
+
+
+
+
+<!-- Entête principale -->
+<div class="bg-light py-2 ">
+    <div class="container-fluid d-flex align-items-center">
+        <img src="assets/icon.png" alt="FuturAlliés Logo" class="logo" height="50">
+        <nav class="navbar-light bg-light">
+            <ul class="nav">
+
+
+                <li class="nav-item ">
+                    <a href="#trainers" class="nav-link" style="color: black;">Guide d'orientation</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#trainers" class="nav-link" style="color: black;">Formations </a>
+                </li>
+
+                <li class="nav-item ">
+                    <a href="#trainers" class="nav-link" style="color: black;">Offre d'emplois</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#trainers" class="nav-link" style="color: black;">Statistiques </a>
+                </li>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  </form>
+                <li class="nav-item">
+                    <a href="#trainers" class="nav-link" style="color: black;">Entreprises</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#trainers" class="nav-link" style="color: black;">SE CONNECTER</a>
+                </li>
+            </ul>
+        </nav>
     </div>
-    </nav>
-  
-  </div> 
-   
+</div>
+
+<section class="banner bg-secondary text-white text-center py-5" style="position: relative; overflow: hidden;">
+    <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; no-repeat center center; background-size: cover; filter: brightness(1.2);"></div>
+    <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 255, 0.3); mix-blend-mode: overlay;"></div>
+    <div class="container" style="position: relative; z-index: 1;">
+        <!-- Contenu textuel au-dessus de l'image -->
+        <h1>Bienvenue sur FuturAlliés</h1>
+        <p>Propulser votre avenir professionnel avec des formations, des opportunités et un accompagnement sur mesure</p>
+        <a href="#join" class="btn btn-warning">Rejoignez-nous</a>
+    </div>
+</section>
+
+
     
-   
-  </body>
-  
+
+    <!-- Notre raison d'être -->
+    <section class="purpose py-5">
+        <div class="container">
+            <h1>Sélectionnez la catégorie qui vous intéresse et découvrez les formations disponibles.</h1>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="https://via.placeholder.com/200x200.png?text=Formation" class="card-img-top" alt="Formation">
+                        <div class="card-body">
+                            <h3 class="card-title">Formation d'Assistance en Présentiel</h3>
+                            <a href="#more" class="btn btn-primary">Voir plus</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="https://via.placeholder.com/200x200.png?text=Cours+Libres" class="card-img-top" alt="Cours Libres">
+                        <div class="card-body">
+                            <h3 class="card-title">Cours Libres</h3>
+                            <a href="#more" class="btn btn-primary">Voir plus</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="https://via.placeholder.com/200x200.png?text=Certifications" class="card-img-top" alt="Certifications">
+                        <div class="card-body">
+                            <h3 class="card-title">Parcours de Formations Certifiantes</h3>
+                            <a href="#more" class="btn btn-primary">Voir plus</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Domaines de formations -->
+    <section class="training-domains py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center">Nos Domaines de Formation</h2>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="https://via.placeholder.com/200x200.png?text=Web+Dev" class="card-img-top" alt="Développement Web">
+                        <div class="card-body">
+                            <h3 class="card-title">Développement Web</h3>
+                            <a href="#certifications" class="btn btn-outline-primary">Certifications du Domaine</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="https://via.placeholder.com/200x200.png?text=Design" class="card-img-top" alt="Design Graphique">
+                        <div class="card-body">
+                            <h3 class="card-title">Design Graphique</h3>
+                            <a href="#certifications" class="btn btn-outline-primary">Certifications du Domaine</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="https://via.placeholder.com/200x200.png?text=Marketing" class="card-img-top" alt="Marketing Digital">
+                        <div class="card-body">
+                            <h3 class="card-title">Marketing Digital</h3>
+                            <a href="#certifications" class="btn btn-outline-primary">Certifications du Domaine</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="https://via.placeholder.com/200x200.png?text=Gestion" class="card-img-top" alt="Gestion de Projet">
+                        <div class="card-body">
+                            <h3 class="card-title">Gestion de Projet</h3>
+                            <a href="#certifications" class="btn btn-outline-primary">Certifications du Domaine</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cours les plus suivis -->
+    <section class="popular-courses py-5">
+        <div class="container">
+            <h2 class="text-center">Cours les Plus Suivis</h2>
+            <div class="btn-group mb-4" role="group">
+                <button type="button" class="btn btn-outline-primary">Tous</button>
+                <button type="button" class="btn btn-outline-primary">Cours Classique</button>
+                <button type="button" class="btn btn-outline-primary">Webinaire</button>
+            </div>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="https://via.placeholder.com/200x200.png?text=Intro+Web" class="card-img-top" alt="Introduction au Développement Web">
+                        <div class="card-body">
+                            <h3 class="card-title">Introduction au Développement Web</h3>
+                            <a href="#follow" class="btn btn-primary">Suivre le cours</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="https://via.placeholder.com/200x200.png?text=Web+Inter" class="card-img-top" alt="Développement Web Intermédiaire">
+                        <div class="card-body">
+                            <h3 class="card-title">Développement Web Intermédiaire</h3>
+                            <a href="#follow" class="btn btn-primary">Suivre le cours</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="https://via.placeholder.com/200x200.png?text=Design+UX" class="card-img-top" alt="Design UX">
+                        <div class="card-body">
+                            <h3 class="card-title">Design UX</h3>
+                            <a href="#follow" class="btn btn-primary">Suivre le cours</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="https://via.placeholder.com/200x200.png?text=SEO" class="card-img-top" alt="SEO">
+                        <div class="card-body">
+                            <h3 class="card-title">SEO</h3>
+                            <a href="#follow" class="btn btn-primary">Suivre le cours</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>

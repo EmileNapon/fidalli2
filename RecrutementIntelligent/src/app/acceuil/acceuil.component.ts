@@ -13,20 +13,6 @@ export class AcceuilComponent {
     this.showSearch = !this.showSearch;
   }
 
-  isFixed: boolean = false;
-  isFixed2: boolean = false;
 
-  @HostListener('window:scroll', [])
-  onWindowScroll() {
-    const navbarRelativeHeight = document.querySelector('.navbar-relative')?.clientHeight || 0;
-
-    const scrollPosition = window.scrollY;
-
-    if (scrollPosition >= navbarRelativeHeight) {
-      this.isFixed = true;
-    } else {
-      this.isFixed = false;
-    }
-  }
 
 }
