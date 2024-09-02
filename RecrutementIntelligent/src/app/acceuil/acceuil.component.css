@@ -12,7 +12,7 @@ body {
 .navbar {
   background-color: rgb(33, 33, 83); /* Couleur de fond de la navbar */
   position: relative;
-  height: 33px;
+  height: 28px;
 }
 
 .nav-item{
