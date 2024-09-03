@@ -1,0 +1,25 @@
+
+body {
+
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 18px;
+  background-color:rgba(127, 127, 189, 0.037) ;
+
+
+}
+
+
+/* Masquer le sous-menu par défaut */
+.dropdown-menu {
+    display: none;
+}
+
+/* Afficher le sous-menu au survol de l'élément parent */
+.nav-item:hover .dropdown-menu {
+    display: block;
+}
+
+/* Modifier l'icône au survol (si nécessaire) */
+.nav-item:hover .nav-link-icon {
+    content: '>';
+}

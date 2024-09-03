@@ -13,6 +13,7 @@ import { ContenuLibreComponent } from './module-formation-certification/contenu-
 import { GestionUtilisateursComponent } from './gestion-utilisateurs/gestion-utilisateurs.component';
 import { RegistrationComponent } from './gestion-utilisateurs/inscription/inscription.component';
 import { ConnexionComponent } from './gestion-utilisateurs/connexion/connexion.component';
+import { InscriptionFormationPresentielleComponent } from './module-formation-certification/inscription-formation-presentielle/inscription-formation-presentielle.component';
 
 const routes: Routes = [
 
@@ -26,7 +27,8 @@ const routes: Routes = [
   {path:'formation',component:ModuleFormationCertificationComponent,children:[
     {path:'pages-etudiant', component:PagesEtudiantsComponent},
     {path:'pages-candidat', component:PagesCandidatComponent},
-    {path:'contenu-libre', component:ContenuLibreComponent}]
+    {path:'contenu-libre', component:ContenuLibreComponent},
+  {path:'FormationPresentielle', component:InscriptionFormationPresentielleComponent}]
   },
 
   {path:'usersPages',component:GestionUtilisateursComponent,children:[
