@@ -1,12 +1,7 @@
-
-
 body {
-
-	font-family: 'Times New Roman', Times, serif;
-  font-size: 20px;
-  background-color:rgba(127, 127, 189, 0.037) ;
-
-
+  background: #f6f5f7;
+  font-family: 'Montserrat', sans-serif;
+  font-size:20px;
 }
 
 .navbar {
@@ -44,8 +39,8 @@ body {
 .navbar-scroll {
   position: relative;
   width: 100%;
-  z-index: 900;
-  transition: top 0.3s;
+  transition: top 0.3s ease-in-out, transform 0.3s ease-in-out; /* Transition pour le top et la translation */
+  z-index: 1000; 
 }
 
 .navbar-scroll.fixed {
@@ -62,3 +57,72 @@ body {
 
 
 
+
+
+/* Bannière */
+.banner {
+
+  background-size: cover;
+  color: #fff;
+  padding: 60px 20px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.banner-content {
+  background-color: rgba(13, 0, 0, 0.5); /* Transparence sombre */
+  display: inline-block;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.banner-content h1 {
+  margin: 0;
+  font-size: 2.5em;
+}
+
+.banner-content p {
+  font-size: 1.2em;
+  margin: 10px 0;
+}
+
+
+
+
+
+footer {
+  background-color: #003366; /* Bleu foncé */
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.footer-section {
+  margin: 10px;
+  flex: 1;
+}
+
+.footer-section h3 {
+  margin-bottom: 10px;
+}
+
+.footer-section ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin: 5px 0;
+}
+
+.footer-section ul li a {
+  color: #ffcc00; /* Jaune doré */
+  text-decoration: none;
+}

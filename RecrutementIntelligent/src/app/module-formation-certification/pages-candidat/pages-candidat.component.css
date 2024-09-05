@@ -1,4 +1,11 @@
 /* Style de la barre de navigation */
+
+body {
+  background: #f6f5f7;
+  font-family: 'Montserrat', sans-serif;
+  font-size:20px;
+}
+
 .navbar {
     background-color: rgb(37, 15, 132); /* Couleur de fond de la navbar */
     position: relative;

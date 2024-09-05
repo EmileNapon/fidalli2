@@ -1,79 +1,157 @@
-<div class="container my-5">
-    <h2 class="text-center mb-4">Nos Domaines de Formation</h2>
-    <div class="row">
-      <!-- Domaine 1: Informatique -->
-      <div class="col-md-4">
-        <div class="card shadow-sm">
-          <img src="image-informatique.jpg" class="card-img-top" alt="Informatique">
-          <div class="card-body">
-            <h5 class="card-title">Informatique</h5>
-            <p class="card-text">Explorez les technologies de l'information, du développement web à la cybersécurité, et formez-vous aux métiers de demain.</p>
-            <a href="#" class="btn btn-primary">En savoir plus</a>
-          </div>
-        </div>
-      </div>
-  
-      <!-- Domaine 2: Gestion et Management -->
-      <div class="col-md-4">
-        <div class="card shadow-sm">
-          <img src="image-gestion.jpg" class="card-img-top" alt="Gestion et Management">
-          <div class="card-body">
-            <h5 class="card-title">Gestion et Management</h5>
-            <p class="card-text">Formez-vous en gestion, management, et leadership pour exceller dans les environnements d'affaires modernes.</p>
-            <a href="#" class="btn btn-primary">En savoir plus</a>
-          </div>
-        </div>
-      </div>
-  
-      <!-- Domaine 3: Ingénierie -->
-      <div class="col-md-4">
-        <div class="card shadow-sm">
-          <img src="image-ingenierie.jpg" class="card-img-top" alt="Ingénierie">
-          <div class="card-body">
-            <h5 class="card-title">Ingénierie</h5>
-            <p class="card-text">Développez des compétences en ingénierie, de la conception à la mise en œuvre de solutions innovantes.</p>
-            <a href="#" class="btn btn-primary">En savoir plus</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  
-    <div class="row mt-4">
-      <!-- Domaine 4: Santé -->
-      <div class="col-md-4">
-        <div class="card shadow-sm">
-          <img src="image-sante.jpg" class="card-img-top" alt="Santé">
-          <div class="card-body">
-            <h5 class="card-title">Santé</h5>
-            <p class="card-text">Accédez à des formations dans le domaine de la santé, allant des soins infirmiers à la médecine.</p>
-            <a href="#" class="btn btn-primary">En savoir plus</a>
-          </div>
-        </div>
-      </div>
-  
-      <!-- Domaine 5: Arts et Design -->
-      <div class="col-md-4">
-        <div class="card shadow-sm">
-          <img src="image-arts.jpg" class="card-img-top" alt="Arts et Design">
-          <div class="card-body">
-            <h5 class="card-title">Arts et Design</h5>
-            <p class="card-text">Explorez votre créativité avec des formations en arts visuels, design graphique, et plus encore.</p>
-            <a href="#" class="btn btn-primary">En savoir plus</a>
-          </div>
-        </div>
-      </div>
-  
-      <!-- Domaine 6: Droit et Sciences Politiques -->
-      <div class="col-md-4">
-        <div class="card shadow-sm">
-          <img src="image-droit.jpg" class="card-img-top" alt="Droit et Sciences Politiques">
-          <div class="card-body">
-            <h5 class="card-title">Droit et Sciences Politiques</h5>
-            <p class="card-text">Préparez-vous à des carrières en droit, en sciences politiques, et en relations internationales.</p>
-            <a href="#" class="btn btn-primary">En savoir plus</a>
-          </div>
-        </div>
-      </div>
-    </div>
+
+    <body>
+    
+        <!-- Entête principale -->
+    
+      
+        <nav class="navbar-light navbar-fixed-top bg-light py-4" style='color:#000000;' >
+    
+            <ul class="nav">
+                <li class="nav-item">
+                    <a>
+                    <img src="assets/icon.png" alt="FuturAlliés Logo" routerLink='/acceuil' class="logo" height="50">
+                    </a>
+                 </li>
+              <li class="nav-item">
+                <a routerLink='/formation/contenuLibre' class="nav-link" style="color: black;">DOMAINE</a>
+              </li>
+
+
+              <li class="nav-item">
+                <a routerLink='/formation/certification' class="nav-link" style="color: black;">CERTIFICAT</a>
+              </li>
+
+             <li class="nav-item">
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2 search-input" type="search" placeholder="RESEARCH" aria-label="Search">
+                </form>
+              </li>
+
+              <li class="nav-item">
+                <a href="#trainers" class="nav-link" style="color: black;">ENTREPRISES</a>
+              </li>
+              
+              <li class="nav-item" style="padding-left: 30px;">
+                <a routerLink="/usersPages/login" class="btn btn-secondary" style="color: black;">SE CONNECTER</a>
+              </li>
+            </ul>
+          </nav>
+
+
+          <section class="banner bg-secondary text-white text-center py-5" style="position: relative; overflow: hidden;color:secondary;">
+            <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; no-repeat center center; background-size: cover; filter: brightness(1.2);"></div>
+            <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 255, 0.3); mix-blend-mode: overlay;"></div>
+            <div class="container" style="position: relative; z-index: 1;">
+            <br/><br/>
+            </div>
+        </section>
+
+<section class="hero">
+  <div class="hero-left">
+      <h1>Découvrez nos cours accès libre</h1>
+      <p>Explorez une variété de cours gratuits pour améliorer vos compétences et élargir vos horizons</p>
+      <a href="#signup" class="cta-btn">Commencez à explorer</a>
   </div>
-  
+  <div class="hero-right">
+      <video controls>
+          <source src="testimonials.mp4" type="video/mp4">
+          Votre navigateur ne prend pas en charge la balise vidéo.
+      </video>
+  </div>
+</section>
+
+<!-- Filtre de Cours -->
+<section class="course-filter">
+  <div class="filter-options">
+      <select id="domain-filter">
+          <option value="all">Tous les domaines</option>
+          <option value="web">Développement Web</option>
+          <option value="design">Design Graphique</option>
+          <option value="marketing">Marketing Digital</option>
+          <option value="management">Gestion de Projet</option>
+      </select>
+      <select id="language-filter">
+          <option value="all">Toutes les langues</option>
+          <option value="fr">Français</option>
+          <option value="en">Anglais</option>
+      </select>
+      <button class="filter-btn">Tout</button>
+      <button class="filter-btn">Les plus suivis</button>
+      <button class="filter-btn">Nouveaux</button>
+  </div>
+</section>
+
+<!-- Liste des Cours -->
+<section class="courses-list">
+  <h2>Cours Disponibles</h2>
+  <div class="courses">
+      <!-- Exemple de cours -->
+      <div class="course-item">
+          <a href="#course1">
+              <img src="course1.jpg" alt="Introduction au Développement Web" class="course-image">
+          </a>
+          <div class="course-details">
+              <p class="course-domain">Développement Web</p>
+              <h3 class="course-title">Introduction au Développement Web</h3>
+              <p class="course-difficulty">Niveau : ★★★</p>
+              <p class="course-duration">Durée : 4 heures</p>
+              <p class="course-description">Apprenez les bases du développement web avec ce cours introductif.</p>
+          </div>
+      </div>
+      <div class="course-item">
+          <a href="#course1">
+              <img src="course1.jpg" alt="Introduction au Développement Web" class="course-image">
+          </a>
+          <div class="course-details">
+              <p class="course-domain">Développement Web</p>
+              <h3 class="course-title">Introduction au Développement Web</h3>
+              <p class="course-difficulty">Niveau : ★★★</p>
+              <p class="course-duration">Durée : 4 heures</p>
+              <p class="course-description">Apprenez les bases du développement web avec ce cours introductif.</p>
+          </div>
+      </div>
+      <div class="course-item">
+          <a href="#course1">
+              <img src="course1.jpg" alt="Introduction au Développement Web" class="course-image">
+          </a>
+          <div class="course-details">
+              <p class="course-domain">Développement Web</p>
+              <h3 class="course-title">Introduction au Développement Web</h3>
+              <p class="course-difficulty">Niveau : ★★★</p>
+              <p class="course-duration">Durée : 4 heures</p>
+              <p class="course-description">Apprenez les bases du développement web avec ce cours introductif.</p>
+          </div>
+      </div>
+      <div class="course-item">
+          <a href="#course1">
+              <img src="course1.jpg" alt="Introduction au Développement Web" class="course-image">
+          </a>
+          <div class="course-details">
+              <p class="course-domain">Développement Web</p>
+              <h3 class="course-title">Introduction au Développement Web</h3>
+              <p class="course-difficulty">Niveau : ★★★</p>
+              <p class="course-duration">Durée : 4 heures</p>
+              <p class="course-description">Apprenez les bases du développement web avec ce cours introductif.</p>
+          </div>
+      </div>
+      <div class="course-item">
+          <a href="#course1">
+              <img src="course1.jpg" alt="Introduction au Développement Web" class="course-image">
+          </a>
+          <div class="course-details">
+              <p class="course-domain">Développement Web</p>
+              <h3 class="course-title">Introduction au Développement Web</h3>
+              <p class="course-difficulty">Niveau : ★★★</p>
+              <p class="course-duration">Durée : 4 heures</p>
+              <p class="course-description">Apprenez les bases du développement web avec ce cours introductif.</p>
+          </div>
+      </div>
+      <!-- Ajoute plus de cours ici -->
+      <!-- Pagination -->
+      <div class="pagination">
+          <a href="#prev">&laquo; Précédent</a>
+          <a href="#next">Suivant &raquo;</a>
+      </div>
+  </div>
+</section>
+</body>

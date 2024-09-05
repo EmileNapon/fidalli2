@@ -1,13 +1,17 @@
 /* Style de la barre de navigation */
+body {
+  background: #f6f5f7;
+  font-family: 'Montserrat', sans-serif;
+  font-size:20px;
+}
+
 .navbar {
     background-color: rgb(37, 15, 132); /* Couleur de fond de la navbar */
     position: relative;
     height: 37.8px;
   }
   
-  
-  
-  
+
   .container{
     margin-left: 2px;
   }
@@ -77,11 +81,6 @@
   
   }
   
-  
-  
-  
-  
-  
   .scrollable-background {
         background-color: rgba(0, 0, 255, 0.349); /* Couleur bleue avec opacité */
         background-blend-mode: multiply; /* Mélange la couleur de fond avec l'image */
@@ -90,11 +89,7 @@
         display: flex;
         color: white;
   }
-  
-  
-  
-  
-  
+   
   
   .navbar-fixed-top {
     position: fixed;

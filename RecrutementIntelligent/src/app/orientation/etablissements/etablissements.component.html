@@ -1,0 +1,81 @@
+<div class="container">
+    <!-- Recherche -->
+    <div class="mb-4">
+        <div class="form-group position-relative">
+            <label for="search-input" class="sr-only">Recherche</label>
+            <input id="search-input" class="form-control" type="search" name="recherche" placeholder="Que recherchez-vous ?" value="" autocomplete="off">
+            <svg class="position-absolute" style="top: 50%; right: 1rem; transform: translateY(-50%);" viewBox="0 0 24 24" height="16" width="16" aria-hidden="true" focusable="false">
+                <path d="M17.5 17.5 23 23Zm-16-7a9 9 0 1 1 9 9 9 9 0 0 1-9-9Z"/>
+            </svg>
+            <button type="button" class="btn-close position-absolute end-0 top-50 translate-middle-y" aria-label="Effacer" hidden></button>
+        </div>
+    </div>
+
+    <!-- Facet Widgets -->
+    <div class="row">
+        <!-- Localité -->
+        <div class="col-md-4 mb-4">
+            <div class="wpgb-facet">
+                <h4 class="wpgb-facet-title">Localité</h4>
+                <fieldset>
+                    <legend class="sr-only">Localité</legend>
+                    <div class="form-group">
+                        <label for="locality-select" class="sr-only">Localité</label>
+                        <select id="locality-select" class="form-select" name="ville" multiple>
+                            <option value="">Toutes les localités</option>
+                            <option value="burkina-faso">Burkina Faso&nbsp;(13)</option>
+                            <option value="bobo-dioulasso">&emsp;Bobo Dioulasso&nbsp;(1)</option>
+                            <option value="kaya">&emsp;Kaya&nbsp;(1)</option>
+                            <option value="koudougou">&emsp;Koudougou&nbsp;(1)</option>
+                            <option value="ouagadougou">&emsp;Ouagadougou&nbsp;(10)</option>
+                        </select>
+                    </div>
+                </fieldset>
+            </div>
+        </div>
+
+        <!-- Type d'établissement -->
+        <div class="col-md-4 mb-4">
+            <div class="wpgb-facet">
+                <h4 class="wpgb-facet-title">Type d'établissement</h4>
+                <fieldset>
+                    <legend class="sr-only">Type d'établissement</legend>
+                    <div class="form-group">
+                        <label for="type-etablissement-select" class="sr-only">Type d'établissement</label>
+                        <select id="type-etablissement-select" class="form-select" name="type_etablissement" multiple>
+                            <option value="">Tous les établissements</option>
+                            <option value="etablissement-prive">Etablissement privé&nbsp;(12)</option>
+                            <option value="ecole-superieure-privee">&emsp;Ecole supérieure privée&nbsp;(4)</option>
+                            <option value="institut-superieur-prive">&emsp;Institut supérieur privé&nbsp;(6)</option>
+                            <option value="universite-privee">&emsp;Université privée&nbsp;(2)</option>
+                            <option value="etablissement-public">Etablissement public&nbsp;(1)</option>
+                            <option value="grande-ecole-publique">&emsp;Grande école publique&nbsp;(1)</option>
+                        </select>
+                    </div>
+                </fieldset>
+            </div>
+        </div>
+
+        <!-- Domaine -->
+        <div class="col-md-4 mb-4">
+            <div class="wpgb-facet">
+                <h4 class="wpgb-facet-title">Domaine</h4>
+                <fieldset>
+                    <legend class="sr-only">Domaine</legend>
+                    <div class="form-group">
+                        <label for="domain-select" class="sr-only">Domaine</label>
+                        <select id="domain-select" class="form-select" name="domaine" multiple>
+                            <option value="">Tous les domaines</option>
+                            <option value="commerce-administration-et-droit">Commerce, administration et droit&nbsp;(49)</option>
+                            <option value="commerce-et-administration">&emsp;Commerce et administration&nbsp;(47)</option>
+                            <option value="marketing-et-publicite">&emsp;&emsp;Marketing et publicité&nbsp;(36)</option>
+                            <option value="communication">&emsp;&emsp;&emsp;Communication&nbsp;(22)</option>
+                            <option value="marketing">&emsp;&emsp;&emsp;Marketing&nbsp;(21)</option>
+                            <!-- Autres options... -->
+                        </select>
+                    </div>
+                </fieldset>
+            </div>
+        </div>
+    </div>
+</div>

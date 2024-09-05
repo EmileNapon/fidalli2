@@ -1,12 +1,11 @@
 import { Component, HostListener } from '@angular/core';
 
 @Component({
-  selector: 'app-contenu-libre',
-  templateUrl: './contenu-libre.component.html',
-  styleUrls: ['./contenu-libre.component.css']
+  selector: 'app-acceuil-formation',
+  templateUrl: './acceuil-formation.component.html',
+  styleUrls: ['./acceuil-formation.component.css']
 })
-export class ContenuLibreComponent {
-
+export class AcceuilFormationComponent {
 
   isFixed: boolean = false;
 

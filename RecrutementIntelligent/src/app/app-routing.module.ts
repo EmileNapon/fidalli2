@@ -14,10 +14,14 @@ import { GestionUtilisateursComponent } from './gestion-utilisateurs/gestion-uti
 import { RegistrationComponent } from './gestion-utilisateurs/inscription/inscription.component';
 import { ConnexionComponent } from './gestion-utilisateurs/connexion/connexion.component';
 import { InscriptionFormationPresentielleComponent } from './module-formation-certification/inscription-formation-presentielle/inscription-formation-presentielle.component';
+import { FormationPourCertificationComponent } from './module-formation-certification/formation-pour-certification/formation-pour-certification.component';
+import { AcceuilFormationComponent } from './module-formation-certification/acceuil-formation/acceuil-formation.component';
+import { OrientationAcceuilComponent } from './orientation/orientation-acceuil/orientation-acceuil.component';
+import { EtablissementsComponent } from './orientation/etablissements/etablissements.component';
 
 const routes: Routes = [
 
-  {path:'',component:AppComponent},
+  {path:'',component:AcceuilComponent},
   {path:'facturation', component:FacturationComponent},
   {path:'premiumCandidat', component:PremiumCandidatComponent},
   {path:'premiumEmployeur', component:PremiumEmployeurComponent},
@@ -25,9 +29,11 @@ const routes: Routes = [
   {path:'acceuil', component:AcceuilComponent},
 
   {path:'formation',component:ModuleFormationCertificationComponent,children:[
-    {path:'pages-etudiant', component:PagesEtudiantsComponent},
-    {path:'pages-candidat', component:PagesCandidatComponent},
-    {path:'contenu-libre', component:ContenuLibreComponent},
+    {path:'acceuilFormation', component:AcceuilFormationComponent},
+    {path:'pagesEtudiant', component:PagesEtudiantsComponent},
+    {path:'pagesCandidat', component:PagesCandidatComponent},
+    {path:'contenuLibre', component:ContenuLibreComponent}, 
+    {path:'certification', component:FormationPourCertificationComponent},
   {path:'FormationPresentielle', component:InscriptionFormationPresentielleComponent}]
   },
 
@@ -36,9 +42,16 @@ const routes: Routes = [
     {path:'login', component:ConnexionComponent},
     ]
   },
-  
+  {path:'orientation',component:OrientationAcceuilComponent,children:[
+    {path:'orientationAcceuil', component:RegistrationComponent},
+    {path:'etablissement', component:EtablissementsComponent}
 
+    ]
+  },
+  
 ];
+
+
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
