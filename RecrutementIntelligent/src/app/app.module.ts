@@ -9,17 +9,18 @@ import { RouterModule } from '@angular/router';
 import { PremiumEtudiantComponent } from './gestion-abonnements-premium/premium-etudiant/premium-etudiant.component';
 import { GestionUtilisateursModule } from './gestion-utilisateurs/gestion-utilisateurs.module';
 import { AcceuilFormationComponent } from './module-formation-certification/acceuil-formation/acceuil-formation.component';
-import { OrientationAcceuilComponent } from './orientation/orientation-acceuil/orientation-acceuil.component';
-import { EtablissementsComponent } from './orientation/etablissements/etablissements.component';
+import { OrientationAcceuilComponent } from './orientations/orientation-acceuil/orientation-acceuil.component';
+import { EtablissementsComponent } from './orientations/etablissements/etablissements.component';
+import { OrientationsModule } from './orientations/orientations.module';
 
 @NgModule({
   declarations: [
     AppComponent,
-    AcceuilComponent,PremiumEtudiantComponent, AcceuilFormationComponent, OrientationAcceuilComponent, EtablissementsComponent,
+    AcceuilComponent,PremiumEtudiantComponent, 
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,ModuleFormationCertificationModule, RouterModule, GestionUtilisateursModule
+    AppRoutingModule,ModuleFormationCertificationModule, RouterModule, GestionUtilisateursModule, OrientationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

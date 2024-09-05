@@ -6,7 +6,6 @@ import { PremiumCandidatComponent } from './gestion-abonnements-premium/premium-
 import { PremiumEtudiantComponent } from './gestion-abonnements-premium/premium-etudiant/premium-etudiant.component';
 import { PagesEtudiantsComponent } from './module-formation-certification/pages-etudiants/pages-etudiants.component';
 import { ModuleFormationCertificationComponent } from './module-formation-certification/module-formation-certification.component';
-import { AppComponent } from './app.component';
 import { AcceuilComponent } from './acceuil/acceuil.component';
 import { PagesCandidatComponent } from './module-formation-certification/pages-candidat/pages-candidat.component';
 import { ContenuLibreComponent } from './module-formation-certification/contenu-libre/contenu-libre.component';
@@ -16,8 +15,9 @@ import { ConnexionComponent } from './gestion-utilisateurs/connexion/connexion.c
 import { InscriptionFormationPresentielleComponent } from './module-formation-certification/inscription-formation-presentielle/inscription-formation-presentielle.component';
 import { FormationPourCertificationComponent } from './module-formation-certification/formation-pour-certification/formation-pour-certification.component';
 import { AcceuilFormationComponent } from './module-formation-certification/acceuil-formation/acceuil-formation.component';
-import { OrientationAcceuilComponent } from './orientation/orientation-acceuil/orientation-acceuil.component';
-import { EtablissementsComponent } from './orientation/etablissements/etablissements.component';
+import { EtablissementsComponent } from './orientations/etablissements/etablissements.component';
+import { OrientationsComponent } from './orientations/orientations.component';
+import { OrientationAcceuilComponent } from './orientations/orientation-acceuil/orientation-acceuil.component';
 
 const routes: Routes = [
 
@@ -42,8 +42,8 @@ const routes: Routes = [
     {path:'login', component:ConnexionComponent},
     ]
   },
-  {path:'orientation',component:OrientationAcceuilComponent,children:[
-    {path:'orientationAcceuil', component:RegistrationComponent},
+  {path:'orientation',component:OrientationsComponent,children:[
+    {path:'orientationAcceuil', component:OrientationAcceuilComponent},
     {path:'etablissement', component:EtablissementsComponent}
 
     ]
