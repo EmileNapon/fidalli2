@@ -20,7 +20,7 @@ import { OrientationsModule } from './orientations/orientations.module';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,ModuleFormationCertificationModule, RouterModule, GestionUtilisateursModule, OrientationsModule
+    AppRoutingModule, RouterModule, GestionUtilisateursModule, OrientationsModule, ModuleFormationCertificationModule
   ],
   providers: [],
   bootstrap: [AppComponent]

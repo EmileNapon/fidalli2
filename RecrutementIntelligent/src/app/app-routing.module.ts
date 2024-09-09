@@ -18,6 +18,8 @@ import { AcceuilFormationComponent } from './module-formation-certification/acce
 import { EtablissementsComponent } from './orientations/etablissements/etablissements.component';
 import { OrientationsComponent } from './orientations/orientations.component';
 import { OrientationAcceuilComponent } from './orientations/orientation-acceuil/orientation-acceuil.component';
+import { QizContenuLibreComponent } from './module-formation-certification/qiz-contenu-libre/quiz-contenu-libre.component';
+
 
 const routes: Routes = [
 
@@ -34,7 +36,8 @@ const routes: Routes = [
     {path:'pagesCandidat', component:PagesCandidatComponent},
     {path:'contenuLibre', component:ContenuLibreComponent}, 
     {path:'certification', component:FormationPourCertificationComponent},
-  {path:'FormationPresentielle', component:InscriptionFormationPresentielleComponent}]
+  {path:'FormationPresentielle', component:InscriptionFormationPresentielleComponent},
+  {path:'quiz', component:QizContenuLibreComponent}]
   },
 
   {path:'usersPages',component:GestionUtilisateursComponent,children:[

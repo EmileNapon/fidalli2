@@ -11,7 +11,11 @@ import { FormationPourCertificationComponent } from './formation-pour-certificat
 import { CertificationComponent } from './certification/certification.component';
 import { PagesEtudiantsComponent } from './pages-etudiants/pages-etudiants.component';
 import { PagesCandidatComponent } from './pages-candidat/pages-candidat.component';
-import { CoursComponent } from './cours/cours.component'
+import { CoursComponent } from './cours/cours.component';
+import { QizCertificationComponent } from './qiz-certification/qiz-certification.component';
+import { QizCoursFormationPresentielleComponent } from './qiz-cours-formation-presentielle/qiz-cours-formation-presentielle.component'
+import { AcceuilFormationComponent } from './acceuil-formation/acceuil-formation.component';
+import { QizContenuLibreComponent } from './qiz-contenu-libre/quiz-contenu-libre.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +26,10 @@ import { CoursComponent } from './cours/cours.component'
     CertificationComponent,
     PagesEtudiantsComponent,
     PagesCandidatComponent,
-    CoursComponent
+    CoursComponent,
+    QizContenuLibreComponent,
+    QizCertificationComponent,
+    QizCoursFormationPresentielleComponent, AcceuilFormationComponent
   ],
   imports: [
     CommonModule, ReactiveFormsModule,  HttpClientModule, RouterModule, 

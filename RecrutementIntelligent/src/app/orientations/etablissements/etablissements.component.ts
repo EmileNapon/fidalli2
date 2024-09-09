@@ -97,8 +97,88 @@ export class EtablissementsComponent {
         description: "Université offrant des formations académiques à Dédougou.",
         schoolType: "Université",
         location: "Dédougou"
-    }
-];
+    },
+    {
+        title: "Institut Supérieur la Plume (ISP)",
+        imgSrc: "https://legrandfrere.bf/wp-content/uploads/IS-La-Plume-150x150.jpg",
+        description: "Institut supérieur spécialisé dans divers domaines d'études.",
+        schoolType: "Institut supérieur privé",
+        location: "Ouagadougou"
+    },
+    {
+        title: "Université Catholique de l'Afrique de l'Ouest (UCAO)",
+        imgSrc: "https://legrandfrere.bf/wp-content/uploads/ucao-bobo-150x150.jpg",
+        description: "Université offrant des formations variées dans un cadre catholique en Afrique de l'Ouest.",
+        schoolType: "Université privée",
+        location: "Bobo Dioulasso"
+    },
+    {
+        title: "Apidon Academy of Science (2AS)",
+        imgSrc: "https://legrandfrere.bf/wp-content/uploads/placeholder-image.png",  // Remplacer par l'image appropriée si disponible
+        description: "Établissement non spécifié.",
+        schoolType: "Institut supérieur privé",
+        location: "Ouagadougou"
+    },
+    {
+        title: "Institut des Sciences pour l’Entreprise et la Gestion/ Ecole de Formation et d’Etudes Commerciales (ISEG/EFEC)",
+        imgSrc: "https://legrandfrere.bf/wp-content/uploads/efec-150x150.jpg",
+        description: "Institut axé sur les sciences de l'entreprise et la gestion, avec des formations en commerce et études commerciales.",
+        schoolType: "Institut supérieur privé",
+        location: "Ouagadougou",
+        
+    },
+   
+        {
+            "title": "Institut Supérieur Monseigneur Dieudonné YOUGBARE de Koupéla (ISMDY)",
+            "imgSrc": "https://legrandfrere.bf/wp-content/uploads/cropped-favicon-512.png",
+            "description": "Institut supérieur privé situé à Koupéla, offrant des formations diverses.",
+            "schoolType": "Institut supérieur privé",
+            "location": "Koupéla",
+           
+        },
+        {
+            "title": "Institut Panafricain des Métiers d'Avenir (IPMA)",
+            "imgSrc": "https://legrandfrere.bf/wp-content/uploads/ipma-150x109.jpg",
+            "description": "Institut axé sur les métiers d'avenir en Afrique, offrant des formations spécialisées.",
+            "schoolType": "Institut supérieur privé",
+            "location": "Ouagadougou",
+           
+        },
+        {
+            "title": "Institut des Sciences de l'Entreprise et du Management (INSEM)",
+            "imgSrc": "https://legrandfrere.bf/wp-content/uploads/insem-150x95.jpg",
+            "description": "Institut spécialisé dans les sciences de l'entreprise et le management.",
+            "schoolType": "Institut supérieur privé",
+            "location": "Ouagadougou",
+            
+        },
+        {
+            "title": "Institut Privé Online Training Center (IPOTC)",
+            "imgSrc": "https://legrandfrere.bf/wp-content/uploads/ipotc-150x150.jpg",
+            "description": "Institut privé spécialisé dans la formation en ligne.",
+            "schoolType": "Institut supérieur privé",
+            "location": "Ouagadougou",
+            
+        },
+        {
+            "title": "Ecole Supérieure de Microfinance (ESMi)",
+            "imgSrc": "https://legrandfrere.bf/wp-content/uploads/esmi-150x150.jpg",
+            "description": "Ecole supérieure dédiée à la microfinance et aux métiers associés.",
+            "schoolType": "Ecole supérieure privée",
+            "location": "Ouagadougou",
+          
+        },
+        {
+            "title": "Institut International de Formation à l'Expertise Comptable (2IFEC)",
+            "imgSrc": "https://legrandfrere.bf/wp-content/uploads/2ifec-150x150.jpg",
+            "description": "Institut spécialisé dans la formation à l'expertise comptable.",
+            "schoolType": "Institut supérieur privé",
+            "location": "Ouagadougou",
+            
+        }
+    ];
+    
+
 
 
 }
