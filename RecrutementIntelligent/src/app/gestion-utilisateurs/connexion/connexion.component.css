@@ -13,16 +13,7 @@ h1 {
     border-radius: 0.375rem;
 }
 
-.btn-warning {
-    background-color: #FFC107;
-    border-color: #FFC107;
-    color: #fff;
-}
 
-.btn-warning:hover {
-    background-color: #e0a800;
-    border-color: #d39e00;
-}
 
 .text-center {
     text-align: center;

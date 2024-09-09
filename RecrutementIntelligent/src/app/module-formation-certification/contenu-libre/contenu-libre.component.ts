@@ -21,7 +21,23 @@ export class ContenuLibreComponent {
       this.isFixed = true;
     } else {
       this.isFixed = false;
-    }
+    }}
+
+
+    courses= [
+      {
+        domain: 'Développement Web',
+        title: 'Introduction au Développement Web',
+        difficulty: '★★★',
+        duration: '4 heures',
+        description: 'Apprenez les bases du développement web avec ce cours introductif.',
+      },
+      // Ajoutez plus de cours ici...
+    ];
+
+
+  
+
   }
 
-}
+

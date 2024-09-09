@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { QizContenuLibreComponent } from './qiz-contenu-libre.component';
+import { QizContenuLibreComponent } from './quiz-contenu-libre.component';
 
 describe('QizContenuLibreComponent', () => {
   let component: QizContenuLibreComponent;
